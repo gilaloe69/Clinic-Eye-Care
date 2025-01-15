@@ -1,0 +1,37 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 80px;
+    z-index: 1; /* Ensures the banner is above other elements */
+}
+
+
+.slides {
+    display: flex; /* Align slides in a row */
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%; /* Each slide takes exactly 100% of the container's width */
+    overflow: hidden; /* Ensure content does not overflow the slides */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sliding keyframes */
+@keyframes slideAnimation {
+    0%, 25% { transform: translateX(0); } /* Show first slide for 5 seconds */
+    33.33%, 58.33% { transform: translateX(-100%); } /* Slide to second and show for 5 seconds */
+    66.66%, 91.66% { transform: translateX(-200%); } /* Slide to third and show for 5 seconds */
+    100% { transform: translateX(0); } /* Reset to first */
+}
+
+.slides {
+    animation: slideAnimation 15s infinite; /* Total duration adjusted for 3 slides */
+}
+

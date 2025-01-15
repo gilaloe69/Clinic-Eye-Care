@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navigator.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+               <a href="index.html"><img src="logo.png" alt="Eye Hospital Logo"></a> 
+            </div>
+            <ul class="nav-right">
+                <li><a href="#beranda">Beranda</a></li>
+                <li class="dropdown">
+                  <a href="#layanan">Layanan <span class="arrow"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#service1">
+                          <img src="service1.png" alt="Service 1">
+                          <div class="dropdown-item-content">
+                              <h4>Service 1</h4>
+                              <p>Short description of Service 1.</p>
+                          </div>
+                      </a>
+                  </li>
+                      <li><a href="#service1">
+                        <img src="service2.png" alt="Service 2">
+                        <div class="dropdown-item-content">
+                            <h4>Service 2</h4>
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a></li>
+                  </li>
+                      <li><a href="#service1">
+                        <img src="service2.png" alt="Service 2">
+                        <div class="dropdown-item-content">
+                            <h4>Service 2</h4>
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a></li>
+                  </li>
+                      <li><a href="#service1">
+                        <img src="service2.png" alt="Service 2">
+                        <div class="dropdown-item-content">
+                            <h4>Service 2</h4>
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a></li>
+                  </li>
+                      <li><a href="#service1">
+                        <img src="service2.png" alt="Service 2">
+                        <div class="dropdown-item-content">
+                            <h4>Service 2</h4>
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a></li>
+                    
+                  </ul>
+              </li>
+              <li><a href="#temukan-dokter">Temukan Dokter</a></li>
+              <li><a href="#tentang-kami">Tentang Kami</a></li>
+              <li class="dropdown">
+                <a href="#layanan">Informasi <span class="arrow"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                    <a href="#service1">
+                        <div class="dropdown-item-content">
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#service1">
+                        <div class="dropdown-item-content">
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#service1">
+                        <div class="dropdown-item-content">
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#service1">
+                        <div class="dropdown-item-content">
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#service1">
+                        <div class="dropdown-item-content">
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="booking-section">
+        <h2>Buat Janji Servis</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukan Nama anda" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukan email anda" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Tanggal</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Waktu</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Pilih Jasa</label>
+                <select id="service" name="service" required>
+                    <option value="">Pilih Jasa </option>
+                    <option value="ServisLaptop">Servis Laptop</option>
+                    <option value="ServisPrinter">Servis Printer</option>
+                    <option value="ServisHati">Servis Hati</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Catatan </label>
+                <textarea id="notes" name="notes" rows="4" placeholder="yang anda pikirkan?"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Kirim </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

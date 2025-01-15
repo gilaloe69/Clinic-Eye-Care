@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Bar with Contact Info and Social Media</title>
+    <style>
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            /* position: fixed; */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .contact-info {
+            display: flex;
+            gap: 20px;
+        }
+        .social-media {
+            display: flex;
+            gap: 15px;
+        }
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="contact-info">
+        <span>Tel: +123 456 7890</span>
+        <span>Email: contact@example.com</span>
+    </div>
+    <div class="social-media">
+        <a href="#" target="_blank"><img src="facebook-logo.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="twitter-logo.png" alt="Twitter"></a>
+        <a href="#" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+    </div>
+</div>
+
+<!-- Rest of the page content -->
+<div style="margin-top: 50px; padding: 20px;">
+    <h1>Welcome to Our Website</h1>
+    <p>This is a sample content area. Scroll to see the fixed top bar in action.</p>
+</div>
+
+</body>
+</html>

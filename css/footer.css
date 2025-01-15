@@ -1,0 +1,125 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.2cm;
+    margin-right: 0.5cm;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  form button {
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid #33333323;
+    background-color: #ffffff;
+    color: rgb(94, 62, 253);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: #333;
+  }
+
+  form button:hover {
+    background-color: #390cff;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+  }
+
+  ul li a:hover {
+    color: #0056b3;
+  }
+
+  /* Right Section */
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .right-section h3 {
+    margin-bottom: 10px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.1cm;
+    margin-right: 3cm;
+  }
+
+  .social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+  }
+
+  .social-links img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Copyright Section */
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Newsletter beside our company */
+  .newsletter {
+    margin-left: 20px;
+  }
+
+  .left-section-container {
+    display: flex;
+    align-items: flex-start;
+  }

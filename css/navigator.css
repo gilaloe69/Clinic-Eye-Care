@@ -1,0 +1,132 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 0.5em;
+}
+
+nav ul li a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 200px;
+}
+
+.dropdown-menu li a {
+    padding: 0.5em 1em;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(-45deg);
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(-225deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 0.5em;
+}
+
+.dropdown-menu li img {
+    width: 100px;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item-content h4 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.dropdown-item-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+
+}

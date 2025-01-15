@@ -1,0 +1,17 @@
+br break
+p paragraf
+b bold
+i italic
+sub huruf letik luhur
+sup huruf letik handap
+hr horizontal rule
+u underline
+strong 
+em
+blockquote
+ol list ku nomber
+li list
+ul list ku dot
+dl definition list
+dt judul definisi
+dd isi definisi
