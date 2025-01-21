@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supported By Section</title>
-    <style>
-        .supported-by {
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        .supported-by h2 {
-            margin-bottom: 20px;
-        }
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .logo-container img {
-            max-width: 150px;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Overlay Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 1520px;
+      margin: auto;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay-content {
+      position: absolute;
+      top: 10%;
+      left: 2%;
+      text-align: left;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .overlay-content h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: -0.6cm;
+    }
+
+    .overlay-content h2 {
+      font-size: 28px;
+      /* margin-bottom: 10px; */
+    }
+
+    .overlay-content p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .link-overlay {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 14px;
+
+    }
+
+    .link-overlay a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .link-overlay a:hover {
+      text-decoration: underline;
+      color: rgb(19, 129, 255);
+    }
+  </style>
 </head>
 <body>
 
-<div class="supported-by">
-    <h2>Supported By</h2>
-    <div class="logo-container">
-        <img src="logo1.png" alt="Logo 1">
-        <img src="logo2.png" alt="Logo 2">
-        <img src="logo3.png" alt="Logo 3">
-        <img src="logo4.png" alt="Logo 4">
+  <div class="image-container">
+    <img src="/img/slide1.jpg" alt="Descriptive Alt Text">
+    <div class="overlay-content">
+      <h3>This is the overlayed H3 text</h3>
+      <h2>This is the overlayed H2 Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod,
+         <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem.
+         <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem
+         <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem
+         <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem
+         <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem</p>
     </div>
-</div>
+    <div class="link-overlay">
+      <a href="your-link.html">Lebih selengkapnya </a>
+    </div>
+  </div>
 
 </body>
 </html>

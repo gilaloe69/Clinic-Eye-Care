@@ -75,11 +75,11 @@ nav {
     /* margin-left: 1em; */
     /* margin-right: 1em; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 .booking-button:hover{
-    background-color: #ddd;
+    background-color: #ffffff;
     color: #007BFF;
 }
 
@@ -87,15 +87,21 @@ nav {
 .login {
     font-family: Arial, sans-serif;
     font-weight: bold;
-    background-color: #ffa407;
+    background-color: #075eff;
     color: white;
     padding: 1em 1em;
     font-size: medium;
     border: none;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-left: 0.5em;
     margin-right: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+}
+.login:hover{
+    background-color: #ffffff;
+    color: #007BFF;
 }
 
 .contact-icon {
@@ -130,7 +136,7 @@ nav {
     border-bottom: 1px solid #ddd;
     position: relative;
     z-index: 2; /* Ensures the info bar is above other elements */
-    margin-top: -30px; /* Creates the overlap */
+    margin-top: -20px;
     box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for the overlap effect */
     
 }
@@ -180,3 +186,31 @@ nav {
 .button-link:hover {
     background-color: #ffffff;
 }
+
+.supported-by {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 3cm;
+}
+.supported-by h2 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.logo-container img {
+    max-width: 250px;
+    height: auto;
+    /* filter: grayscale(1);
+    transition: filter 0.2s ease-in; */
+}
+/* 
+.logo-container img:hover{
+    filter: grayscale(0);
+} */

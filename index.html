@@ -1,240 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eye Hospital</title>
-    <link rel="icon" href="/img/img.png"/>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/banner.css">
-    <link rel="stylesheet" href="/css/kontent.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/navigator.css">
-    <style>
-      .supported-by {
-          background-color: #f8f9fa;
-          padding: 20px;
-          text-align: center;
-          font-family: Arial, sans-serif;
-      }
-      .supported-by h2 {
-          margin-bottom: 20px;
-      }
-      .logo-container {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          flex-wrap: wrap;
-      }
-      .logo-container img {
-          max-width: 150px;
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Eye Hospital</title>
+      <link rel="icon" href="/img/img.png"/>
+      <link rel="stylesheet" href="/css/styles.css">
+      <link rel="stylesheet" href="/css/banner.css">
+      <link rel="stylesheet" href="/css/kontent.css">
+      <link rel="stylesheet" href="/css/footer.css">
+      <link rel="stylesheet" href="/css/navigator.css">
+      <style>
+    
+        .image-container {
+          position: relative;
+          width: 100%;
+          max-width: 1520px;
+          margin: auto;
+        }
+    
+        .image-container img {
+          width: 100%;
           height: auto;
-      }
-  </style>
-</head>
-<body>
-  <nav>
-    <div class="nav-left">
-        <div class="logo">
-           <a href="index.html"><img src="/img/logo.png" alt="Eye Hospital Logo"></a> 
+        }
+    
+        .overlay-content {
+          position: absolute;
+          top: 10%;
+          left: 2%;
+          text-align: left;
+          color: white;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    
+        .overlay-content h3 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: -0.6cm;
+          color: #ffffff;
+        }
+    
+        .overlay-content h2 {
+          font-size: 28px;
+          /* margin-bottom: 10px; */
+        }
+    
+        .overlay-content p {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+    
+        .link-overlay {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          font-size: 14px;
+    
+        }
+    
+        .link-overlay a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+          transition: transform 0.5s ease-in-out;
+        }
+        .article{
+          text-align: right;
+          margin-right: 1cm;
+          margin-bottom: 8cm;
+          margin-left: 12cm;
+          /* border: 1px solid #ccc;    */
+          margin-top: 2cm;
+        }
+      </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+          <div class="logo">
+            <a href="index.html"><img src="/img/logo.png" alt="Eye Hospital Logo"></a> 
+          </div>
+          <ul class="nav-right">
+              <li><a href="index.html">Beranda</a></li>
+              <li class="dropdown">
+                <a href="#layanan">Pusat Layanan <span class="arrow"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="layanan.html#2">
+                        <img src="/img/glaukoma.jpg" alt="Service 1">
+                        <div class="dropdown-item-content">
+                            <h4>Glaukoma</h4>
+                            <p>Short description of Service 1.</p>
+                        </div>
+                    </a>
+                </li>
+                    <li><a href="#service1">
+                      <img src="service2.png" alt="Service 2">
+                      <div class="dropdown-item-content">
+                          <h4>Service 2</h4>
+                          <p>Short description of Service 1.</p>
+                      </div>
+                  </a></li>
+                </li>
+                    <li><a href="#service1">
+                      <img src="service2.png" alt="Service 2">
+                      <div class="dropdown-item-content">
+                          <h4>Service 2</h4>
+                          <p>Short description of Service 1.</p>
+                      </div>
+                  </a></li>
+                </li>
+                    <li><a href="#service1">
+                      <img src="service2.png" alt="Service 2">
+                      <div class="dropdown-item-content">
+                          <h4>Service 2</h4>
+                          <p>Short description of Service 1.</p>
+                      </div>
+                  </a></li>
+                </li>
+                    <li><a href="#service1">
+                      <img src="service2.png" alt="Service 2">
+                      <div class="dropdown-item-content">
+                          <h4>Service 2</h4>
+                          <p>Short description of Service 1.</p>
+                      </div>
+                  </a></li>
+                  
+                </ul>
+            </li>
+              <li><a href="#temukan-dokter">Temukan Dokter</a></li>
+              <li class="dropdown">
+                <a href="#layanan">Pusat Informasi <span class="arrow"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                    <a href="about.html">
+                        <div class="dropdown-item-content">
+                            <p>Tentang kami</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="TataTertib.html">
+                        <div class="dropdown-item-content">
+                            <p>Tata tertib</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="k">
+                        <div class="dropdown-item-content">
+                            <p>Syarat dan ketentuan</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="kebi">
+                        <div class="dropdown-item-content">
+                            <p>Kebijakan Privasi</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#service1">
+                        <div class="dropdown-item-content">
+                            <p>Cara Booking</p>
+                        </div>
+                    </a>
+                    </li>
+          </ul>
+      </div>
+      <div class="nav-right-button">
+        <a href="booking.html"><button class="booking-button">Buat Janji Temu</button></a>
+        <button class="login">Login/Masuk</button>
+      </div>
+  </nav>
+
+  <div class="banner">
+    <div class="slides">
+        <div class="slide" id="s1">
+            <picture>
+                <source media="(max-width: 600px)" srcset="image-small.jpg">
+                <source media="(max-width: 1200px)" srcset="image-medium.jpg">
+                <img src="/img/banner1.png" alt="Banner Image">
+            </picture>
         </div>
-        <ul class="nav-right">
-            <li><a href="#beranda">Beranda</a></li>
-            <li class="dropdown">
-              <a href="#layanan">Layanan <span class="arrow"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#service1">
-                      <img src="service1.jpg" alt="Service 1">
-                      <div class="dropdown-item-content">
-                          <h4>Service 1</h4>
-                          <p>Short description of Service 1.</p>
-                      </div>
-                  </a>
-              </li>
-                  <li><a href="#service1">
-                    <img src="service2.png" alt="Service 2">
-                    <div class="dropdown-item-content">
-                        <h4>Service 2</h4>
-                        <p>Short description of Service 1.</p>
-                    </div>
-                </a></li>
-              </li>
-                  <li><a href="#service1">
-                    <img src="service2.png" alt="Service 2">
-                    <div class="dropdown-item-content">
-                        <h4>Service 2</h4>
-                        <p>Short description of Service 1.</p>
-                    </div>
-                </a></li>
-              </li>
-                  <li><a href="#service1">
-                    <img src="service2.png" alt="Service 2">
-                    <div class="dropdown-item-content">
-                        <h4>Service 2</h4>
-                        <p>Short description of Service 1.</p>
-                    </div>
-                </a></li>
-              </li>
-                  <li><a href="#service1">
-                    <img src="service2.png" alt="Service 2">
-                    <div class="dropdown-item-content">
-                        <h4>Service 2</h4>
-                        <p>Short description of Service 1.</p>
-                    </div>
-                </a></li>
-                
-              </ul>
-          </li>
-            <li><a href="#temukan-dokter">Temukan Dokter</a></li>
-            <li><a href="about.html">Tentang Kami</a></li>
-            <li class="dropdown">
-              <a href="#layanan">Informasi <span class="arrow"></span></a>
-              <ul class="dropdown-menu">
-                  <li>
-                  <a href="about.html">
-                      <div class="dropdown-item-content">
-                          <p>Tentang kami</p>
-                      </div>
-                  </a>
-                  </li>
-                  <li>
-                  <a href="#service1">
-                      <div class="dropdown-item-content">
-                          <p>Short description of Service 1.</p>
-                      </div>
-                  </a>
-                  </li>
-                  <li>
-                  <a href="#service1">
-                      <div class="dropdown-item-content">
-                          <p>Short description of Service 1.</p>
-                      </div>
-                  </a>
-                  </li>
-                  <li>
-                  <a href="#service1">
-                      <div class="dropdown-item-content">
-                          <p>Short description of Service 1.</p>
-                      </div>
-                  </a>
-                  </li>
-                  <li>
-                  <a href="#service1">
-                      <div class="dropdown-item-content">
-                          <p>Short description of Service 1.</p>
-                      </div>
-                  </a>
-                  </li>
-        </ul>
-    </div>
-    <div class="nav-right-button">
-      <a href="booking.html"><button class="booking-button">Buat Janji Temu</button></a>
-      <button class="login">Login/Masuk</button>
-    </div>
-</nav>
-
-<div class="banner">
-  <div class="slides">
-      <div class="slide" id="s1">
-          <picture>
-              <source media="(max-width: 600px)" srcset="image-small.jpg">
-              <source media="(max-width: 1200px)" srcset="image-medium.jpg">
-              <img src="/img/banner1.png" alt="Banner Image">
-          </picture>
-      </div>
-      <div class="slide" id="s2">
-          <img src="/img/slide2.jpg" alt="Slide 2">
-      </div>
-      <div class="slide" id="s3">
-          <img src="/img/slide3.jpg" alt="Slide 3">
-      </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-<div class="info-bar">
-
-<a href="sasas" target="_blank" class="info-button">
-    <h3>Temukan Dokter</h3>
-    <p>Cari dokter spesialis untuk kebutuhan Anda.</p>
-</a>
-<a href="https://maps.app.goo.gl/kj5LTbyMgQd3KKcK6" target="_blank" class="info-button">
-    <h3>Lokasi</h3>
-    <p>Temukan lokasi rumah sakit terdekat.</p>
-</a>
-<a href="booking.html" class="info-button">
-    <h3>Buat Temu Janji</h3>
-    <p>Buat janji temu dengan dokter pilihan Anda.</p>
-</a>
-</div>
-
-  <section class="product-section">
-      <h2 class="section-title">Fasilitas dan Layanan</h2>
-      <h4 class="subsection-title">Kami hadir untuk melayani anda </h4>  
-    <div class="product-container-wrapper">
-      <div class="product-container">
-          <div class="product-card">
-              <img src="/img/product1.jpg" alt="Product 1" class="product-image">
-              <h3 class="product-title">ROG Strix</h3>
-              <p class="product-description">Laptop dengan spek paling tinggi</p>
-              <a href="layanan.html"><button class="product-button"> Cek Selengkapnya </button></a>
-          </div>
-          <div class="product-card">
-              <img src="/img/product1.jpg" alt="Product 1" class="product-image">
-              <h3 class="product-title">ROG Strix</h3>
-              <p class="product-description">Laptop dengan spek paling tinggi</p>
-              <button class="product-button"> Cek Selengkapnya </button>
-          </div>
-          <div class="product-card">
-              <img src="/img/product1.jpg" alt="Product 1" class="product-image">
-              <h3 class="product-title">ROG Strix</h3>
-              <p class="product-description">Laptop dengan spek paling tinggi</p>
-              <button class="product-button"> Cek Selengkapnya </button>
-          </div>
-          <div class="product-card">
-              <img src="/img/product1.jpg" alt="Product 1" class="product-image">
-              <h3 class="product-title">ROG Strix</h3>
-              <p class="product-description">Laptop dengan spek paling tinggi</p>
-              <button class="product-button"> Cek Selengkapnya </button>
-          </div>
-          <div class="product-card">
-              <img src="/img/product1.jpg" alt="Product 1" class="product-image">
-              <h3 class="product-title">ROG Strix</h3>
-              <p class="product-description">Laptop dengan spek paling tinggi</p>
-              <button class="product-button"> Cek Selengkapnya </button>
-          </div>
-          <div class="product-card">
-              <img src="/img/product1.jpg" alt="Product 1" class="product-image">
-              <h3 class="product-title">ROG Strix</h3>
-              <p class="product-description">Laptop dengan spek paling tinggi</p>
-              <button class="product-button"> Cek Selengkapnya </button>
-          </div>
+        <div class="slide" id="s2">
+            <img src="/img/slide2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide" id="s3">
+            <img src="/img/slide3.jpg" alt="Slide 3">
         </div>
     </div>
-  </section>
-    <div class="contact-icon">
-        <img src="kontak.png" alt="WhatsApp" id="contact-service-icon">
-    </div>
-    <div class="supported-by">
-      <h2>Partnership</h2>
-      <div class="logo-container">
-          <img src="/img/product1.png" alt="Logo 1">
-          <img src="/img/product1.png" alt="Logo 2">
-          <img src="/img/product1.png" alt="Logo 3">
-          <img src="/img/product1.png" alt="Logo 4">
-      </div>
   </div>
-    <footer>
-        <div class="footer-content">
-          <!-- Left Section and Newsletter -->
-          <div class="left-section-container">
-            <div class="left-section">
-              <!-- Our Company Links -->
+
+      </div>
+    </div>
+  </div>
+  <div class="info-bar">
+
+  <a href="sasas" target="_blank" class="info-button">
+      <h3>Temukan Dokter</h3>
+      <p>Cari dokter spesialis untuk kebutuhan Anda.</p>
+  </a>
+  <a href="https://maps.app.goo.gl/kj5LTbyMgQd3KKcK6" target="_blank" class="info-button">
+      <h3>Lokasi</h3>
+      <p>Temukan lokasi rumah sakit terdekat.</p>
+  </a>
+  <a href="booking.html" class="info-button">
+      <h3>Buat Temu Janji</h3>
+      <p>Buat janji temu dengan dokter pilihan Anda.</p>
+  </a>
+  </div>
+
+    <section class="product-section">
+        <h2 class="section-title">Fasilitas dan Layanan</h2>
+        <h4 class="subsection-title">Kami hadir untuk melayani anda </h4>  
+      <div class="product-container-wrapper">
+        <div class="product-container">
+            <div class="product-card">
+                <img src="/img/glaukoma.jpg" alt="Product 1" class="product-image">
+                <h3 class="product-title">Glaukoma</h3>
+                <p class="product-description">Laptop dengan spek paling tinggi</p>
+                <a href="layanan.html"><button class="product-button"> Cek Selengkapnya </button></a>
+            </div>
+            <div class="product-card">
+                <img src="/img/product1.jpg" alt="Product 1" class="product-image">
+                <h3 class="product-title">ROG Strix</h3>
+                <p class="product-description">Laptop dengan spek paling tinggi</p>
+                <button class="product-button"> Cek Selengkapnya </button>
+            </div>
+            <div class="product-card">
+                <img src="/img/product1.jpg" alt="Product 1" class="product-image">
+                <h3 class="product-title">ROG Strix</h3>
+                <p class="product-description">Laptop dengan spek paling tinggi</p>
+                <button class="product-button"> Cek Selengkapnya </button>
+            </div>
+            <div class="product-card">
+                <img src="/img/product1.jpg" alt="Product 1" class="product-image">
+                <h3 class="product-title">ROG Strix</h3>
+                <p class="product-description">Laptop dengan spek paling tinggi</p>
+                <button class="product-button"> Cek Selengkapnya </button>
+            </div>
+            <div class="product-card">
+                <img src="/img/product1.jpg" alt="Product 1" class="product-image">
+                <h3 class="product-title">ROG Strix</h3>
+                <p class="product-description">Laptop dengan spek paling tinggi</p>
+                <button class="product-button"> Cek Selengkapnya </button>
+            </div>
+            <div class="product-card">
+                <img src="/img/product1.jpg" alt="Product 1" class="product-image">
+                <h3 class="product-title">ROG Strix</h3>
+                <p class="product-description">Laptop dengan spek paling tinggi</p>
+                <button class="product-button"> Cek Selengkapnya </button>
+            </div>
+          </div>
+      </div>
+    </section>
+    <div class="article">
+      <h1>Right-Aligned Article</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+          You can add as much content as you like, and it will remain aligned to the right. This style can be useful for languages that are written from right to left or for specific design purposes.
+      </p>
+      <p>
+          Thank you for reading!
+      </p>
+  </div>
+    <div class="image-container">
+      <img src="/img/slide1.jpg" alt="Descriptive Alt Text">
+      <div class="overlay-content">
+        <h3>This is the overlayed H3 text</h3>
+        <h2>This is the overlayed H2 Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod,
+          <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem.
+          <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem
+          <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem
+          <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem
+          <br>mauris nec porta pellentesque, erat quam pharetra nunc, non scelerisque erat enim ac lorem</p>
+      </div>
+      <div class="link-overlay">
+        <a href="modol.html">Lebih selengkapnya </a>
+      </div>
+    </div>
+      <div class="contact-icon">
+          <img src="/img/kontak.png" alt="WhatsApp" id="contact-service-icon">
+      </div>
+      <div class="supported-by">
+        <h2>Mitra Kami</h2>
+        <div class="logo-container">
+            <img src="/img/bpjs.png" alt="Logo 1">
+            <img src="/img/mitra2.png" alt="Logo 2">
+            <img src="/img/product1.png" alt="Logo 3">
+            <img src="/img/product1.png" alt="Logo 4">
+        </div>
+    </div>
+    
+      <footer>
+          <div class="footer-content">
+            <div class="left-section-container">
+              <div class="left-section">
+                <div>
+                  <h3>Our Company</h3>
+                  <ul>
+                    <li><a href="kebijakan.html">Syarat & Ketentuan</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="kebijakan.html">Kebijakan Privasi</a></li>
+                    <li><a href="#">Karir</a></li>
+                  </ul>
+                </div>
+              </div>
               <div>
-                <h3>Our Company</h3>
+                <h3>Fasilitas dan Layanan</h3>
                 <ul>
                   <li><a href="#">Syarat & Ketentuan</a></li>
                   <li><a href="#">Tentang Kami</a></li>
@@ -242,60 +320,50 @@
                   <li><a href="#">Karir</a></li>
                 </ul>
               </div>
+            
+              <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Stay updated with our latest news and offers.</p>
+                <form>
+                  <div class="form-group">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div>
-              <h3>Fasilitas dan Layanan</h3>
-              <ul>
-                <li><a href="#">Syarat & Ketentuan</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Kebijakan Privasi</a></li>
-                <li><a href="#">Karir</a></li>
-              </ul>
-            </div>
-          
-            <div class="newsletter">
-              <h3>Subscribe to our Newsletter</h3>
-              <p>Stay updated with our latest news and offers.</p>
-              <form>
-                <div class="form-group">
-                  <input type="email" placeholder="Enter your email">
-                  <button type="submit">Subscribe</button>
+      
+            <div class="right-section">
+              <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                  <a href="#" title="Facebook"><img src="/img/fesnuk.png" alt="Facebook"></a>
                 </div>
-              </form>
-            </div>
-          </div>
-    
-          <div class="right-section">
-            <div>
-              <h3>Follow Us</h3>
-              <div class="social-links">
-                <a href="#" title="Facebook"><img src="facebook.png" alt="Facebook"></a>
-              </div>
-              <div class="social-links">
-                <a href="#" title="Instagram"><img src="instagram.png" alt="Instagram"></a>
-              </div>
-              <div class="social-links">
-                <a href="#" title="Instagram"><img src="tiktok.png" alt="tiktok"></a><a>modol</a>
-              </div>
-              <div class="social-links">
-                <a href="#" title="Instagram"><img src="whatsapp.png" alt="whatsapp"></a>
+                <div class="social-links">
+                  <a href="#" title="Instagram"><img src="/img/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="social-links">
+                  <a href="#" title="Instagram"><img src="/img/tiktok.png" alt="tiktok"></a><a>modol</a>
+                </div>
+                <div class="social-links">
+                  <a href="#" title="Instagram"><img src="/img/twitter.png" alt="whatsapp"></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    
-        <!-- Copyright Section -->
-        <div class="copyright">
-          &copy; 2025 Your Company Name. All rights reserved.
-        </div>
-      </footer>
-    
-    <script>
-        document.getElementById('contact-service-icon').addEventListener('click', function() {
-            window.open('https://wa.me/6281210309577', '_blank');
-        });
-    </script>
-    
-        
-</body>
-</html>
+      
+          <!-- Copyright Section -->
+          <div class="copyright">
+            &copy; 2025 Your Company Name. All rights reserved.
+          </div>
+        </footer>
+      
+      <script>
+          document.getElementById('contact-service-icon').addEventListener('click', function() {
+              window.open('https://wa.me/6281210309577', 'hallo');
+          });
+      </script>
+      
+          
+  </body>
+  </html>

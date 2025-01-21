@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1520x500 Image Container with Text and Buttons</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            margin: auto;
+            overflow: hidden;
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: space-between;
+            /* border: 1px solid #ddd; */
+            /* border-radius: 10px; */
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+            position: absolute;
+            z-index: -1;
+        }
+        .side-text {
+            position: absolute;
+            top: 20%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 30%;
+            left: 20px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .text-overlay h2 {
+            margin: 0;
+        }
+        .text-overlay p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="/img/slide2.jpg" alt="Descriptive Alt Text">
+    <div class="side-text">
+        <h4>Left Side Text</h4>
+    </div>
+    <div class="text-overlay">
+        <h2>Main Heading<br>sdaksdas</h2>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vehicula ultrices ut mi nibh curae conubia nisl auctor. Bibendum porttitor mus hac pharetra nunc netus duis. Nisl porta per cras suspendisse, vulputate himenaeos vivamus posuere. Consequat duis dictumst erat convallis eu nullam. Consequat tempus cursus facilisi ad, fusce elit aliquam. Risus finibus phasellus; tellus elit tellus ridiculus.
+
+Feugiat ante enim purus inceptos aliquam urna ornare placerat. Suscipit consequat sodales tristique ante interdum aptent venenatis tempus. Vivamus dui bibendum nostra lectus quis. Ad porttitor facilisi suspendisse, ultrices auctor malesuada mi pellentesque. In convallis dictum fames netus suspendisse. Lacus euismod eget nam sagittis massa fermentum sit sit. Euismod dictumst fermentum curae fringilla neque sem vulputate. Tempor est iaculis parturient ex mauris elementum, penatibus erat.</p>
+    </div>
+</div>
+
+</body>
+</html>

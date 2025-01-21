@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Article Update</title>
+  <title>Eye Hospital</title>
+  <link rel="icon" href="/img/img.png"/>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/banner.css">
+  <link rel="stylesheet" href="/css/kontent.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navigator.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: Arial, sans-serif;
       display: flex;
@@ -24,18 +24,20 @@
       width: 900px;
       height: auto;
       display: flex;
-      border: 1px solid #ccc;
+      /* border: 1px solid #ccc;    */
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
       background-color: #fff;
+      margin-top: 5cm;
     }
 
     .list-container {
       width: 250px;
-      background-color: #f4f4f4;
+      /* background-color: #f4f4f4; */
       padding: 20px;
-      border-right: 1px solid #ddd;
+      /* border-right: 1px solid #ddd; */
+      
     }
 
     .list-container h2 {
@@ -56,7 +58,8 @@
     }
 
     .list-container ul li:hover {
-      background: #d4d4d4;
+      background: #52acff;
+      color: #ffffff;
     }
 
     .content-container {
@@ -87,14 +90,117 @@
   </style>
 </head>
 <body>
+<nav>
+  <div class="nav-left">
+      <div class="logo">
+         <a href="index.html"><img src="/img/logo.png" alt="Eye Hospital Logo"></a> 
+      </div>
+      <ul class="nav-right">
+          <li><a href="#beranda">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#layanan">Pusat Layanan <span class="arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#service1">
+                    <img src="service1.jpg" alt="Service 1">
+                    <div class="dropdown-item-content">
+                        <h4>Service 1</h4>
+                        <p>Short description of Service 1.</p>
+                    </div>
+                </a>
+            </li>
+                <li><a href="#service1">
+                  <img src="service2.png" alt="Service 2">
+                  <div class="dropdown-item-content">
+                      <h4>Service 2</h4>
+                      <p>Short description of Service 1.</p>
+                  </div>
+              </a></li>
+            </li>
+                <li><a href="#service1">
+                  <img src="service2.png" alt="Service 2">
+                  <div class="dropdown-item-content">
+                      <h4>Service 2</h4>
+                      <p>Short description of Service 1.</p>
+                  </div>
+              </a></li>
+            </li>
+                <li><a href="#service1">
+                  <img src="service2.png" alt="Service 2">
+                  <div class="dropdown-item-content">
+                      <h4>Service 2</h4>
+                      <p>Short description of Service 1.</p>
+                  </div>
+              </a></li>
+            </li>
+                <li><a href="#service1">
+                  <img src="service2.png" alt="Service 2">
+                  <div class="dropdown-item-content">
+                      <h4>Service 2</h4>
+                      <p>Short description of Service 1.</p>
+                  </div>
+              </a></li>
+              
+            </ul>
+        </li>
+          <li><a href="#temukan-dokter">Temukan Dokter</a></li>
+          <li class="dropdown">
+            <a href="#layanan">Pusat Informasi <span class="arrow"></span></a>
+            <ul class="dropdown-menu">
+                <li>
+                <a href="about.html">
+                    <div class="dropdown-item-content">
+                        <p>Tentang kami</p>
+                    </div>
+                </a>
+                </li>
+                <li>
+                <a href="#service1">
+                    <div class="dropdown-item-content">
+                        <p>Short description of Service 1.</p>
+                    </div>
+                </a>
+                </li>
+                <li>
+                <a href="#service1">
+                    <div class="dropdown-item-content">
+                        <p>Short description of Service 1.</p>
+                    </div>
+                </a>
+                </li>
+                <li>
+                <a href="#service1">
+                    <div class="dropdown-item-content">
+                        <p>Short description of Service 1.</p>
+                    </div>
+                </a>
+                </li>
+                <li>
+                <a href="#service1">
+                    <div class="dropdown-item-content">
+                        <p>Short description of Service 1.</p>
+                    </div>
+                </a>
+                </li>
+      </ul>
+  </div>
+  <div class="nav-right-button">
+    <a href="booking.html"><button class="booking-button">Buat Janji Temu</button></a>
+    <button class="login">Login/Masuk</button>
+  </div>
+</nav>
   <div class="container">
     <div class="list-container">
-      <h2>Menu</h2>
+      <h2>Layanan</h2>
       <ul>
-        <li onclick="updateContent(1)">Item 1</li>
+        <li onclick="updateContent(1)">Glaukoma</li>
         <li onclick="updateContent(2)">Item 2</li>
         <li onclick="updateContent(3)">Item 3</li>
         <li onclick="updateContent(4)">Item 4</li>
+        <li onclick="updateContent(5)">Item 5</li>
+        <li onclick="updateContent(5)">Item 5</li>
+        <li onclick="updateContent(5)">Item 5</li>
+        <li onclick="updateContent(5)">Item 5</li>
         <li onclick="updateContent(5)">Item 5</li>
       </ul>
     </div>
@@ -110,47 +216,50 @@
   </div>
 
   <script>
-    const articles = {
-      1: {
-        title: "Article Title 1",
-        content: "This is the content for Article 1. It provides details about the first menu item.",
-        image: "https://via.placeholder.com/700x400/ff9999/000000?text=Image+1"
-      },
-      2: {
-        title: "Article Title 2",
-        content: "This is the content for Article 2. It contains information about the second menu item.",
-        image: "https://via.placeholder.com/700x400/99ccff/000000?text=Image+2"
-      },
-      3: {
-        title: "Article Title 3",
-        content: "This is the content for Article 3. It describes the third menu item.",
-        image: "https://via.placeholder.com/700x400/ffff99/000000?text=Image+3"
-      },
-      4: {
-        title: "Article Title 4",
-        content: "This is the content for Article 4. It explains the details of the fourth menu item.",
-        image: "https://via.placeholder.com/700x400/99ff99/000000?text=Image+4"
-      },
-      5: {
-        title: "Article Title 5",
-        content: "This is the content for Article 5. It elaborates on the fifth menu item.",
-        image: "https://via.placeholder.com/700x400/ffcc99/000000?text=Image+5"
-      }
+const articles = {
+  1: {
+    title: "Glaukoma",
+    content: `Lorem ipsum odor amet, consectetuer adipiscing elit. Pulvinar gravida lacinia elementum habitant porttitor suscipit sed nec. 
+              Proin elit duis sed nam a vulputate faucibus tristique venenatis. Feugiat mauris elementum odio magna a mollis pulvinar curabitur fringilla! 
+              Elit placerat ornare ipsum, montes semper phasellus. Tortor mattis phasellus pulvinar duis id habitasse? Auctor scelerisque vitae a integer nibh quam vel netus. 
+              Aliquet sodales donec fringilla penatibus nullam mus senectus. 
+              Additional sentence 1. Additional sentence 2. Additional sentence 3. Additional sentence 4. Additional sentence 5.`,
+    image: "/img/glaukoma.jpg"
+  },
+  2: {
+    title: "modol",
+    content: `Lorem ipsum odor amet, consectetuer adipiscing elit. Pulvinar gravida lacinia elementum habitant porttitor suscipit sed nec. 
+              Proin elit duis sed nam a vulputate faucibus tristique venenatis. Feugiat mauris elementum odio magna a mollis pulvinar curabitur fringilla! 
+              Elit placerat ornare ipsum, montes semper phasellus. Tortor mattis phasellus pulvinar duis id habitasse? Auctor scelerisque vitae a integer nibh quam vel netus. 
+              Aliquet sodales donec fringilla penatibus nullam mus senectus. 
+              Additional sentence 1. Additional sentence 2. Additional sentence 3. Additional sentence 4. Additional sentence 5.`,
+    image: "/img/glaukoma.jpg"
+  },
+  3: {
+    title: "waduk",
+    content: `Lorem ipsum odor amet, consectetuer adipiscing elit. Pulvinar gravida lacinia elementum habitant porttitor suscipit sed nec. 
+              Proin elit duis sed nam a vulputate faucibus tristique venenatis. Feugiat mauris elementum odio magna a mollis pulvinar curabitur fringilla! 
+              Elit placerat ornare ipsum, montes semper phasellus. Tortor mattis phasellus pulvinar duis id habitasse? Auctor scelerisque vitae a integer nibh quam vel netus. 
+              Aliquet sodales donec fringilla penatibus nullam mus senectus. 
+              Additional sentence 1. Additional sentence 2. Additional sentence 3. Additional sentence 4. Additional sentence 5.`,
+    image: "/img/glaukoma.jpg"
+  },
+
     };
 
     function updateContent(itemId) {
-      const articleImage = document.getElementById("article-image");
-      const articleContent = document.getElementById("article-content");
+  const articleImage = document.getElementById("article-image");
+  const articleContent = document.getElementById("article-content");
 
-      // Update the image
-      articleImage.src = articles[itemId].image;
+  // Update the image
+  articleImage.src = articles[itemId].image;
 
-      // Update the article content
-      articleContent.innerHTML = `
-        <h1>${articles[itemId].title}</h1>
-        <p>${articles[itemId].content}</p>
-      `;
-    }
+  // Update the article content
+  articleContent.innerHTML = `
+    <h1>${articles[itemId].title}</h1>
+    <p>${articles[itemId].content}</p>
+  `;
+}
   </script>
 </body>
 </html>
